@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>gugudan8</h1>
+    <h2>사용자</h2>
+    <script>
+        var n = prompt('몇 단?');
+        var num = Number(n);
+        if ( n < 2 || n > 9 ) {
+            alert('2 이상 9 이하 숫자를 입력하세요');
+        } else {
+            document.write('사용자 : ' + num + '단' + '<br/>');
+            for(var i = 1; i < 10; i++) {
+                var result = num*i;
+                document.write(num + ' * ' + i + ' = ' + result + '<br/>');
+            }
+        }
+    </script>
+
+</body>
+</html>
